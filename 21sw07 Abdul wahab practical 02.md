@@ -1,61 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
+> # _**Practical: 02**_
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-
-    <h1 style="text-align: center;">Task1</h1>
-    <table border="1px">
+#### **Task1: Create a time table of your class via combining different style,effects,color,size and padding**   
+#### Solution:
+Code:
+```HTML
+ <h1 style="text-align: center;">Task1</h1>
+ <table border="1px">
         <caption>Time Table of 21SW 4th Semester</caption>
-
         <thead>
             <tr>
-
                 <td>
                     Day/Time
                 </td>
-
                 <td>
                     8:30-9:30
                 </td>
-
                 <td>
                     9:30-10:30
                 </td>
-
                 <td>
                     10:30-11:00
                 </td>
                 <td>
                     11:00-12:00
                 </td>
-
-
-
                 <td>
                     12:00-1:00
                 </td>
-
-
                 <td>
                     1:00-2:00
                 </td>
-
                 <td>
                     2:00-3:00
                 </td>
             </tr>
         </thead>
-
-
-
         <tbody style="text-align: center;">
-
             <tr>
                 <td>MON</td>
                 <td>SDA</td>
@@ -64,74 +44,54 @@
                 <td colspan="3">We(PR)</td>
                 <td>...</td>
             </tr>
-
-
             <tr>
                 <td>Tue</td>
                 <td colspan="2">CN(PR)</td>
-
                 <td>CN(PR)</td>
                 <td>Ent</td>
                 <td>OR</td>
                 <td>OR</td>
             </tr>
-
-
-
             <tr>
                 <td>WED</td>
                 <td colspan="2">SDA(PR)</td>
-
                 <td>SDA(PR)</td>
                 <td>CN</td>
                 <td>CN</td>
                 <td>SDA</td>
             </tr>
-
-
-
             <tr>
                 <td>THU</td>
                 <td>CN</td>
                 <td>CN</td>
-
                 <td>WE</td>
                 <td>WE</td>
                 <td>ENT</td>
                 <td>ENT</td>
             </tr>
-
             <tr>
                 <td>FRI</td>
                 <td>OR</td>
                 <td>OR</td>
-
                 <td>WE</td>
                 <td>WE</td>
                 <td colspan="3">...</td>
             </tr>
-
-
-
         </tbody>
-
-     
     </table>
+```
 
 
+> #### **Task Output**![task4.png](task4.png)
 
+_**Task2: Create a table in HTML web page with zebra strip color style. With any border style.**_
+#### Solution:
 
+code:
 
-
- <hr>
-
-
-<h1 style="text-align: center;">Task2</h1>
-
-
-<table class="table2" border="1px">
-    <caption></caption>
-    
+```HTML 
+ <h1 style="text-align: center;">Task2</h1>
+<table   class="table2" border="1px">
     <thead>
         <tr>
             <th>Name</th>
@@ -155,58 +115,36 @@
             <td>Shaikh</td>
             <td>21SW07</td>
         </tr>
-        <tfoot>
-            <tr>
-
-           
-            <td>  <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. In consequatur iusto voluptatibus, amet maiores iste, laborum ipsa possimus mollitia esse ad voluptate. Corporis, illo porro. Reprehenderit incidunt doloribus et ipsam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis illum, id ipsum iste delectus quas, asperiores et ipsam earum sint porro repellendus rem eum nemo dolore voluptatem inventore nesciunt tempora! </p></td>  </tr>
-
-            <tr>
-
-           
-                <td>  <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. In consequatur iusto voluptatibus, amet maiores iste, laborum ipsa possimus mollitia esse ad voluptate. Corporis, illo porro. Reprehenderit incidunt doloribus et ipsam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis illum, id ipsum iste delectus quas, asperiores et ipsam earum sint porro repellendus rem eum nemo dolore voluptatem inventore nesciunt tempora! </p></td>  </tr>
-
-                <tr>
-
-           
-                    <td>  <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. In consequatur iusto voluptatibus, amet maiores iste, laborum ipsa possimus mollitia esse ad voluptate. Corporis, illo porro. Reprehenderit incidunt doloribus et ipsam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis illum, id ipsum iste delectus quas, asperiores et ipsam earum sint porro repellendus rem eum nemo dolore voluptatem inventore nesciunt tempora! </p></td>  </tr>
-         </tfoot>
-        
     </tbody>
-
-    
-    
 </table>
-
-
-  <!-- nth-child is a sudo class -->
-<!-- <style>
-  
+  <!-- CSS Part For Styling -->
+<style>
     tr:nth-child(odd) {
-        background-color: #f2f2f2; /* Zebra stripe color for odd rows */
+        background-color: Black; 
     }
     tr:nth-child(even) {
-        background-color: white; /* Zebra stripe color for even rows */
+        background-color: white; 
     }
-
     .table2{
         background-color: beige;
         border:  2px solid grey;
         border-bottom: 4px;
         border-top: 4px;
-      box-shadow: 10px 10px 20px 6px khaki;
-
-        
-        
+      box-shadow: 10px 10px 20px 6px khaki;  
     }
-</style> -->
+</style>
+```
+> #### **Task Output:** ![task5.png](task5.png)
 
-<hr>
+_**Task3: Combine the styling from the two vertical and horizontal zebra strips effects every other row and every other column.
+Note: If you use a transparent color you will get an overlapping effect.**_
 
-<h1 style="text-align: center;">Taks3</h1>
+Solution:
 
+code:
 
-
+```HTML CSS
+<!-- HtML CODE -->
 <table class="table3" border="1px">
     <caption></caption>
     
@@ -236,7 +174,7 @@
     </tbody>
 </table>
 
-<!-- 
+<!-- CSS part for styling -->
  <style>
     .table3{
         background-color: aquamarine;
@@ -245,8 +183,6 @@
     tr:nth-child(odd) td:nth-child(even){
         background-color: bisque;
     }
- </style> -->
-
-</body>
-
-</html>
+ </style> 
+```
+> #### **Task OutPut**: ![task6.png](task6.png)
