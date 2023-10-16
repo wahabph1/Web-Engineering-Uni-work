@@ -1,0 +1,384 @@
+> # **Practical: 07**
+
+**Task: Create a web site of your department using frames. On one frame display the link while on other frame display the web pages of the department. Use marquees for notifications or any upcoming event Sample data can be taken from the QUEST website.**
+
+**code:**
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+
+    #header {
+      display: flex;
+    }
+
+    #main {
+      display: flex;
+      margin-top: 30px;
+    }
+
+    #left {
+      width: 50%;
+      border: 1px solid black;
+    }
+
+    #right {
+      width: 50%;
+      border: 1px solid black;
+    }
+
+    #h {
+      color: rgb(29, 35, 35);
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      text-align: center;
+      padding-top: 20px;
+      padding-left: 30px;
+    }
+
+    li:hover {
+      border: 1px solid ghostwhite;
+      border-radius: 45px;
+      background-color: azure;
+      color: black;
+    }
+
+    #h1 {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      text-align: center;
+      margin: 10px;
+    }
+
+    #h2 {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      text-align: center;
+      margin: 10px;
+    }
+
+    #imgdiv {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .img {
+      height: 300px;
+      width: 325px;
+      float: left;
+      padding-bottom: 40px;
+      border-radius: 250px;
+      padding-left: 30px;
+      transition: all 1s linear;
+    }
+    .img2 {
+      float: left;
+      height: 300px;
+      width: 325px;
+      float: right;
+      padding-bottom: 40px;
+      border-radius: 300px;
+      padding-left: 30px;
+      transition: all 1s linear;
+    }
+
+    img:hover {
+      border-left: px saddlebrown solid;
+    }
+
+    p {
+      text-align: center;
+      padding-top: 40px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+      font-size: 20px;
+    }
+    .staff {
+      display: flex;
+      margin-top: 50px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .p {
+      text-align: center;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+    }
+    .imgs {
+      width: 400px;
+      height: 400px;
+    }
+    .con {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 50px;
+    }
+    input {
+      margin-top: 40px;
+      width: 200px;
+      height: 40px;
+      border: 2px solid black;
+    }
+    #headimg {
+      padding-left: 90px;
+      height: 100px;
+    }
+  </style>
+
+  <body>
+    <div id="header">
+      <h1 id="h">Welcome to Software Engineering Department</h1>
+      <div>
+        <img
+          id="headimg"
+          src="https://scontent.fkhi26-1.fna.fbcdn.net/v/t39.30808-6/302085960_446609554190282_5571937695971504867_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=P6BOnSC2-xgAX8MxASp&_nc_ht=scontent.fkhi26-1.fna&oh=00_AfDa7S5SVwYW77CL5yryXzWsXpCGqiVlMlMQJlpUsGL4Pg&oe=6506D1A0"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div id="main">
+      <div id="left">
+        <h1 id="h1">Our Activities</h1>
+
+        <div id="imgdiv">
+          <div>
+            <img
+              style="
+                width: 650px;
+                height: 400px;
+                border-radius: 0px;
+                padding-left: 0px;
+              "
+              src="https://scontent.fkhi26-1.fna.fbcdn.net/v/t39.30808-6/332215003_1569351700250693_811938320400814616_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5614bc&_nc_ohc=u30PS4z6-GcAX8diIjp&_nc_ht=scontent.fkhi26-1.fna&oh=00_AfDaA_WX8g7gm3GKyFvNwnEn3Wqf9hNLPkR77L3N9jleNw&oe=6506AEF2"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="img"
+              src="https://scontent.fkhi26-1.fna.fbcdn.net/v/t39.30808-6/275553289_143507861487695_2157087344438725709_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5614bc&_nc_ohc=HdLhNURyojgAX90nUOz&_nc_ht=scontent.fkhi26-1.fna&oh=00_AfDMfjE_O7KJR2juWXKieKVo0bIxiN7lC5imd9JOxxpJww&oe=6506BABA"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus, molestias cumque impedit quibusdam ad dolor
+              sapiente, cupiditate animi consequatur maxime reprehenderit
+              fugiat, consectetur voluptatum illo maiores illum. Ab, velit non?
+            </p>
+          </div>
+          <hr />
+          <div>
+            <img
+              class="img"
+              src="https://scontent.fkhi26-1.fna.fbcdn.net/v/t39.30808-6/332597576_736016584626651_1817661426780409570_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5614bc&_nc_ohc=M2sQgKmDnlAAX-G96Dp&_nc_ht=scontent.fkhi26-1.fna&oh=00_AfDqYO0kYhs5_WwEYaN_b7WzTetNdTtqQug34nZYHt5Ulw&oe=650803AF"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus, molestias cumque impedit quibusdam ad dolor
+              sapiente, cupiditate animi consequatur maxime reprehenderit
+              fugiat, consectetur voluptatum illo maiores illum. Ab, velit non?
+            </p>
+          </div>
+          <hr />
+
+          <div>
+            <img
+              class="img"
+              src="https://scontent.fkhi26-1.fna.fbcdn.net/v/t39.30808-6/332155892_989971361966503_2259540983182460362_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5614bc&_nc_ohc=ezr0RADI2AQAX-Om2rd&_nc_ht=scontent.fkhi26-1.fna&oh=00_AfD7W5SC1CkgQflxG3pCD9JAV5b8bZm_9XryUg5py7y8GQ&oe=650714FE"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus, molestias cumque impedit quibusdam ad dolor
+              sapiente, cupiditate animi consequatur maxime reprehenderit
+              fugiat, consectetur voluptatum illo maiores illum. Ab, velit non?
+            </p>
+          </div>
+          <hr />
+
+          <div>
+            <img
+              class="img"
+              src="https://scontent.fkhi26-1.fna.fbcdn.net/v/t39.30808-6/332473514_926072755239784_5665858733204108862_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5614bc&_nc_ohc=D3hNgoiJ3P8AX8cxQnS&_nc_ht=scontent.fkhi26-1.fna&oh=00_AfAGfuEGRb43solf4JXrbFU8H7dakA-Apm_Xj80mfs08lQ&oe=65082AFA"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus, molestias cumque impedit quibusdam ad dolor
+              sapiente, cupiditate animi consequatur maxime reprehenderit
+              fugiat, consectetur voluptatum illo maiores illum. Ab, velit non?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="right">
+        <h1 id="h2">Our Upcoming Events</h1>
+
+        <div style="display: flex; flex-direction: column">
+          <div>
+            <img
+              class="img2"
+              src="https://scontent.fkhi26-1.fna.fbcdn.net/v/t39.30808-6/377839586_648820454010067_7789829105302159014_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5614bc&_nc_ohc=05s0ss7n7nkAX_FnO89&_nc_ht=scontent.fkhi26-1.fna&oh=00_AfDq2E5znC98eCHxVuEGDFgwCkBX-O2WAuM6n9VG9ptOMQ&oe=6506E971"
+              alt=""
+            />
+
+            <p>
+              Microsoft Tech hub is proud to announce our newest community
+              partner: Microsoft Learn Student Ambassadors - UET Lahore Lahore
+              for our ongoing series "Tech Weekends With MTHMLSA UET is a
+              Microsoft student ambassador club for UET Lahore university which
+              is filled with inspiring and hard working MLSAs who have played a
+              big role in building a diverse and active
+            </p>
+          </div>
+          <hr />
+
+          <div>
+            <img
+              class="img2"
+              src="https://scontent.fkhi26-1.fna.fbcdn.net/v/t39.30808-6/376852235_646689820889797_4159130417840561551_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5614bc&_nc_ohc=ZLyOQ_91znsAX89GS_F&_nc_ht=scontent.fkhi26-1.fna&oh=00_AfANDxDyLy3DkpXjxnbctZHR5IeSIunej-vVg1q4jfBE2Q&oe=6507F69B"
+              alt=""
+            />
+            <p>
+              Presenting the second installment of Microsoft Tech Hub's Tech
+              Weekends With MTH 2.0: "Navigating Post-Graduation Challenges:
+              Real-Life Stories of Overcoming Obstacles in the Workplace.
+            </p>
+          </div>
+          <hr />
+
+          <div>
+            <img
+              class="img2"
+              src="https://scontent.fkhi26-1.fna.fbcdn.net/v/t39.30808-6/376555952_646005080958271_2712112819148477836_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5614bc&_nc_ohc=eGQlS_I14AcAX9wphYK&_nc_ht=scontent.fkhi26-1.fna&oh=00_AfAq8thzgcL7VQbebe0r587nWGao2T2CX8SXMZYW3xJ5jw&oe=65087E87"
+              alt=""
+            />
+            <p>
+              Introducing the inaugural installment of Microsoft Tech Hub's Tech
+              Weekends With MTH: "Unlock The Database Wizard: Your DBA Journey
+              Starts HereGet ready to embark on your database journey, where
+              we'll delve into the fundamentals and take you through the
+              exciting world of databases.
+            </p>
+          </div>
+          <hr />
+
+          <div>
+            <img
+              class="img2"
+              src="https://scontent.fkhi26-1.fna.fbcdn.net/v/t39.30808-6/375146130_644793007746145_5094860522731926618_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5614bc&_nc_ohc=OPS7v52ClW0AX-iufz4&_nc_ht=scontent.fkhi26-1.fna&oh=00_AfD0VTusbyFJDjR1de1VAPMJfnN0MWiz8p-eYxKXs7ZGig&oe=6506D09B"
+              alt=""
+            />
+            <p>
+              Meet Julius Volz the visionary behind Prometheus monitoring.
+              Leading PromLabs and the creator of PromLens, Julius is at the
+              forefront of making monitoring accessible and powerful. With a
+              proven track record in cloud-native tech, he's set to inspire at
+              Kubernetes Community Days! 🌟 Register Now at
+              https:http://Kcdlahore.com
+            </p>
+          </div>
+          <hr />
+
+          <div>
+            <img
+              class="img2"
+              src="https://scontent.fkhi26-1.fna.fbcdn.net/v/t39.30808-6/374739763_643525167872929_7713100252957098453_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5614bc&_nc_ohc=MOwOI_RMCqkAX87iOyb&_nc_ht=scontent.fkhi26-1.fna&oh=00_AfBzPZiCtkGov6sMt8j_XQTYZETVXRi0VG3uNW9ZWoNi3w&oe=650725C1"
+              alt=""
+            />
+            <p>
+              Exciting News! Introducing the Newest Microsoft Learn Student
+              Ambassadors from QUEST Nawabshah! 🚀 The Microsoft Tech Hub QUEST
+              chapter is thrilled to announce the latest additions to our elite
+              group of Microsoft Learn Student Ambassadors (MLSA). These
+              talented individuals have demonstrated exceptional dedication,
+              passion, and a profound commitment
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- after left and right div -->
+
+    <h1 id="h">Our Faculty Members</h1>
+    <div class="staff">
+      <div>
+        <img src="st1.PNG" alt="" />
+      </div>
+
+      <div>
+        <img src="st2.PNG" alt="" />
+      </div>
+
+      <div>
+        <img src="st3.PNG" alt="" />
+      </div>
+      <div>
+        <img src="st4.PNG" alt="" />
+      </div>
+      <div>
+        <img src="st5.PNG" alt="" />
+      </div>
+
+      <div>
+        <img src="st6.PNG" alt="" />
+      </div>
+
+      <!-- contact us <div> -->
+    </div>
+
+    <div>
+      <h1 id="h">contact Us</h1>
+
+      <div class="con" style="display: flex">
+        <div>
+          <form style="text-align: center" action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required /><br /><br />
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required /><br /><br />
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" /><br /><br />
+            <label for="message">Message:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              cols="50"
+              required
+            ></textarea
+            ><br /><br />
+          </form>
+        </div>
+
+        <iframe
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border: 0"
+          <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255666.8273920808!2d68.3980982621252!3d26.24537425473643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394bcabac02d7da7%3A0x94bbacee8e93faa3!2sNawabshah%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1680698445232!5m2!1sen!2s"
+          height="400"
+          style="width: 100%"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>
+```
